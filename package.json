@@ -29,7 +29,7 @@
   ],
   "scripts": {
     "build-fast": "tsup src/index.ts --format cjs,esm",
-    "build": "nr build-fast -- --dts-resolve",
+    "build": "nr build-fast --dts-resolve",
     "lint": "eslint .",
     "prepublishOnly": "nr build",
     "release": "bumpp && npm publish",
